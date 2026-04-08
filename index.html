@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>180 in Gas Mark? Oven Temperature Conversion (°C, °F, Gas, Fan)</title>
+    <meta name="description" content="What is 180 in gas mark? 180°C is gas mark 4. Convert any oven temperature between Celsius, Fahrenheit, gas mark and fan oven instantly with our free converter.">
+    <meta name="keywords" content="180 in gas mark, 180 c in gas mark, 180 degrees in gas mark, 180 c into gas mark, what is 180 degrees celsius in gas mark, 200 degrees in gas mark, 200c in gas mark, gas mark 6 in degrees, gas mark 4 in degrees, 350f to gas mark, 350 f to gas mark, gas mark to celsius, oven temperature conversion, fan oven conversion">
+    <link rel="canonical" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #FAFAFA;
+            --surface: #FFFFFF;
+            --text: #18181B;
+            --text-soft: #71717A;
+            --text-muted: #A1A1AA;
+            --accent: #DC2626;
+            --accent-hover: #B91C1C;
+            --accent-soft: #FEF2F2;
+            --border: #E4E4E7;
+            --border-strong: #D4D4D8;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            font-feature-settings: "cv11", "ss01";
+        }
+
+        nav {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 24px 24px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav .brand {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        nav .brand-mark {
+            width: 22px;
+            height: 22px;
+            background: var(--accent);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 11px;
+            font-weight: 800;
+        }
+        nav .meta {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .ad-slot {
+            display: none;
+            max-width: 880px;
+            margin: 0 auto 8px;
+            padding: 0 24px;
+        }
+        .ad-slot-inner {
+            background: var(--surface);
+            border: 1px dashed var(--border);
+            border-radius: 8px;
+            padding: 18px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+
+        .hero {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 56px 24px 36px;
+        }
+        .hero .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            color: var(--text-soft);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 100px;
+            margin-bottom: 24px;
+        }
+        .hero .badge-dot {
+            width: 6px; height: 6px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1.2px;
+            margin-bottom: 16px;
+            max-width: 720px;
+        }
+        .hero h1 .accent { color: var(--accent); }
+        .hero p {
+            font-size: 16px;
+            color: var(--text-soft);
+            max-width: 580px;
+            line-height: 1.65;
+        }
+
+        /* ── CONVERTER ── */
+        .converter-section {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 16px 24px;
+        }
+        .converter-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .converter-header {
+            padding: 24px 28px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .converter-header h2 {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .converter-header .info-tag {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .converter-body {
+            padding: 28px;
+        }
+
+        .input-row {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-soft);
+            margin-bottom: 8px;
+        }
+        .input-wrap {
+            position: relative;
+        }
+        .input-wrap input,
+        .input-wrap select {
+            width: 100%;
+            padding: 14px 16px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text);
+            background: var(--surface);
+            border: 1.5px solid var(--border-strong);
+            border-radius: 10px;
+            outline: none;
+            transition: border-color 0.15s, box-shadow 0.15s;
+            -moz-appearance: textfield;
+        }
+        .input-wrap input::-webkit-outer-spin-button,
+        .input-wrap input::-webkit-inner-spin-button {
+            -webkit-appearance: none; margin: 0;
+        }
+        .input-wrap select {
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%2371717A' d='M1 1l5 5 5-5' stroke='%2371717A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            padding-right: 40px;
+            cursor: pointer;
+        }
+        .input-wrap input:focus,
+        .input-wrap select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-soft);
+        }
+
+        /* ── PRESETS ── */
+        .presets {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+        }
+        .preset-btn {
+            padding: 7px 14px;
+            font-family: 'Inter', sans-serif;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-soft);
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.15s;
+        }
+        .preset-btn:hover {
+            color: var(--accent);
+            border-color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        /* ── RESULTS GRID (4 cards, no big black box) ── */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .res-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 16px;
+            text-align: center;
+            transition: all 0.15s;
+        }
+        .res-card.highlight {
+            background: var(--accent-soft);
+            border-color: var(--accent);
+        }
+        .res-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .res-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text);
+            line-height: 1;
+            letter-spacing: -1px;
+        }
+        .res-card.highlight .res-value { color: var(--accent); }
+        .res-value .unit {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-left: 2px;
+        }
+
+        /* ── CHART SECTION ── */
+        .chart-section {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 32px 24px 16px;
+        }
+        .chart-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .chart-header {
+            padding: 24px 28px;
+            border-bottom: 1px solid var(--border);
+        }
+        .chart-header h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .chart-header p {
+            font-size: 13px;
+            color: var(--text-soft);
+        }
+
+        .conv-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        .conv-table thead th {
+            background: var(--bg);
+            padding: 12px 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .conv-table tbody td {
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border);
+            font-weight: 500;
+            color: var(--text);
+        }
+        .conv-table tbody tr:last-child td { border-bottom: none; }
+        .conv-table tbody tr:hover { background: var(--bg); }
+        .conv-table .desc {
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--text-soft);
+        }
+        .conv-table .gas-num {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        /* ── INFO ── */
+        .info-section {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 16px 24px 48px;
+        }
+        .info-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 36px;
+        }
+        .info-card h2 {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 16px;
+        }
+        .info-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 24px 0 8px;
+        }
+        .info-card p {
+            color: var(--text-soft);
+            font-size: 14px;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .faq-item summary {
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            padding: 16px 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+        }
+        .faq-item[open] summary { border-bottom-color: var(--accent); }
+        .faq-item summary::-webkit-details-summary { display: none; }
+        .faq-item summary::before {
+            content: '+';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px; height: 22px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 14px;
+            flex-shrink: 0;
+            border-radius: 6px;
+        }
+        .faq-item[open] summary::before {
+            content: '−';
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+        .faq-item .faq-answer {
+            padding: 12px 0 16px 34px;
+            color: var(--text-soft);
+            font-size: 14px;
+            line-height: 1.7;
+            border-bottom: 1px solid var(--border);
+        }
+
+        footer {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 24px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 700px) {
+            .converter-header, .converter-body, .chart-header { padding-left: 22px; padding-right: 22px; }
+            .input-row { grid-template-columns: 1fr; }
+            .results-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+            .info-card { padding: 26px; }
+            .conv-table thead th, .conv-table tbody td { padding: 12px 16px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <span class="brand">
+        <span class="brand-mark">°</span>
+        OvenConvert
+    </span>
+    <span class="meta">Gas Mark · °C · °F · Fan</span>
+</nav>
+
+<div class="ad-slot"><div class="ad-slot-inner">Ad Space</div></div>
+
+<section class="hero">
+    <div class="badge"><span class="badge-dot"></span>Free Converter</div>
+    <h1>What is <span class="accent">180 in gas mark?</span> The complete oven temperature converter</h1>
+    <p>180°C is gas mark 4. Use the calculator below to convert any temperature between Celsius, Fahrenheit, gas mark and fan oven — all four conversions at once.</p>
+</section>
+
+<section class="converter-section">
+    <div class="converter-card">
+        <div class="converter-header">
+            <h2>Temperature Converter</h2>
+            <span class="info-tag">All four conversions, instantly</span>
+        </div>
+        <div class="converter-body">
+
+            <div class="input-row">
+                <div class="input-group">
+                    <label>From</label>
+                    <div class="input-wrap">
+                        <select id="from" onchange="convert()">
+                            <option value="celsius">Celsius (°C)</option>
+                            <option value="fahrenheit">Fahrenheit (°F)</option>
+                            <option value="gas">Gas Mark</option>
+                            <option value="fan">Fan Oven (°C)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Temperature</label>
+                    <div class="input-wrap">
+                        <input type="number" id="temp" value="180" min="0" oninput="convert()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="presets">
+                <button class="preset-btn" onclick="quickSet(160, 'celsius')">160°C</button>
+                <button class="preset-btn" onclick="quickSet(180, 'celsius')">180°C</button>
+                <button class="preset-btn" onclick="quickSet(200, 'celsius')">200°C</button>
+                <button class="preset-btn" onclick="quickSet(220, 'celsius')">220°C</button>
+                <button class="preset-btn" onclick="quickSet(350, 'fahrenheit')">350°F</button>
+                <button class="preset-btn" onclick="quickSet(400, 'fahrenheit')">400°F</button>
+                <button class="preset-btn" onclick="quickSet(4, 'gas')">Gas 4</button>
+                <button class="preset-btn" onclick="quickSet(6, 'gas')">Gas 6</button>
+            </div>
+
+            <div class="results-grid">
+                <div class="res-card" id="card-c">
+                    <div class="res-label">Celsius</div>
+                    <div class="res-value" id="res-c">180<span class="unit">°C</span></div>
+                </div>
+                <div class="res-card" id="card-f">
+                    <div class="res-label">Fahrenheit</div>
+                    <div class="res-value" id="res-f">356<span class="unit">°F</span></div>
+                </div>
+                <div class="res-card" id="card-g">
+                    <div class="res-label">Gas Mark</div>
+                    <div class="res-value" id="res-g">4</div>
+                </div>
+                <div class="res-card" id="card-fan">
+                    <div class="res-label">Fan Oven</div>
+                    <div class="res-value" id="res-fan">160<span class="unit">°C</span></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="ad-slot" style="padding-top:24px;"><div class="ad-slot-inner">Ad Space</div></div>
+
+<section class="chart-section">
+    <div class="chart-card">
+        <div class="chart-header">
+            <h2>Full Conversion Chart</h2>
+            <p>Every gas mark from cool to very hot, with degrees and fan equivalents</p>
+        </div>
+        <table class="conv-table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Gas Mark</th>
+                    <th>Celsius</th>
+                    <th>Fahrenheit</th>
+                    <th>Fan Oven</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="desc">Very cool</td><td class="gas-num">¼</td><td>110°C</td><td>225°F</td><td>90°C</td></tr>
+                <tr><td class="desc">Very cool</td><td class="gas-num">½</td><td>120°C</td><td>250°F</td><td>100°C</td></tr>
+                <tr><td class="desc">Cool / slow</td><td class="gas-num">1</td><td>140°C</td><td>275°F</td><td>120°C</td></tr>
+                <tr><td class="desc">Slow</td><td class="gas-num">2</td><td>150°C</td><td>300°F</td><td>130°C</td></tr>
+                <tr><td class="desc">Warm</td><td class="gas-num">3</td><td>160°C</td><td>325°F</td><td>140°C</td></tr>
+                <tr><td class="desc">Moderate</td><td class="gas-num">4</td><td>180°C</td><td>350°F</td><td>160°C</td></tr>
+                <tr><td class="desc">Moderately hot</td><td class="gas-num">5</td><td>190°C</td><td>375°F</td><td>170°C</td></tr>
+                <tr><td class="desc">Hot</td><td class="gas-num">6</td><td>200°C</td><td>400°F</td><td>180°C</td></tr>
+                <tr><td class="desc">Hot</td><td class="gas-num">7</td><td>220°C</td><td>425°F</td><td>200°C</td></tr>
+                <tr><td class="desc">Very hot</td><td class="gas-num">8</td><td>230°C</td><td>450°F</td><td>210°C</td></tr>
+                <tr><td class="desc">Very hot</td><td class="gas-num">9</td><td>240°C</td><td>475°F</td><td>220°C</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="info-section">
+    <div class="info-card">
+        <h2>Understanding Oven Temperatures</h2>
+        <p>If you've ever opened a recipe book and seen "180°C" when your oven only shows gas marks, or tried to follow an American recipe with "350°F" on a UK fan oven, you know how confusing oven temperatures can get. There are <strong>four common ways to measure oven heat</strong> in the kitchen — and they all describe the same thing differently.</p>
+
+        <h3>What is gas mark?</h3>
+        <p>Gas mark is a temperature scale used on gas cookers, almost exclusively in the UK and Ireland. Each gas mark corresponds to a specific temperature, going from gas mark ¼ (very cool, around 110°C) up to gas mark 9 (very hot, around 240°C). The system was designed by the British gas industry in the 1940s and stuck around because British recipe books continued to use it long after electric ovens with degree displays became common.</p>
+
+        <h3>Fan oven vs conventional oven</h3>
+        <p>A fan oven (also called a convection oven) circulates hot air using a built-in fan, which cooks food faster and more evenly than a conventional oven at the same temperature. As a rule of thumb, you should <strong>reduce the temperature by 20°C</strong> when using a fan oven compared to a conventional one. So a recipe that says "180°C" actually means "160°C in a fan oven."</p>
+
+        <h3>Celsius vs Fahrenheit</h3>
+        <p>Celsius is used in the UK, Europe and most of the world. Fahrenheit is used almost exclusively in the United States. The conversion formula is: <strong>°F = (°C × 9/5) + 32</strong>. So 180°C = 356°F, though most American recipes round this to 350°F for convenience.</p>
+
+        <h2 style="margin-top:32px;">Frequently Asked Questions</h2>
+
+        <details class="faq-item">
+            <summary>What is 180 in gas mark?</summary>
+            <div class="faq-answer">180°C is gas mark 4 in a conventional oven. This is described as "moderate" heat — perfect for most baking, including cakes, biscuits and casseroles. In a fan oven, you'd use 160°C. In Fahrenheit, that's 350°F.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is 180 degrees Celsius in gas mark?</summary>
+            <div class="faq-answer">180 degrees Celsius equals gas mark 4. The full conversion: 180°C = gas mark 4 = 350°F = 160°C fan. It's the most commonly used baking temperature in British recipes.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is 200 degrees in gas mark?</summary>
+            <div class="faq-answer">200°C is gas mark 6 in a conventional oven, or 180°C in a fan oven. This is "hot" oven heat — used for roasting vegetables, baking bread, and finishing roast potatoes for crispness. In Fahrenheit it's 400°F.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is gas mark 6 in degrees?</summary>
+            <div class="faq-answer">Gas mark 6 equals 200°C in a conventional oven, 180°C in a fan oven, or 400°F. It's classified as "hot" and is one of the most commonly used temperatures in British cooking — ideal for roasting, baking bread and reheating meals.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is gas mark 4 in degrees?</summary>
+            <div class="faq-answer">Gas mark 4 equals 180°C in a conventional oven, 160°C in a fan oven, or 350°F. It's described as "moderate" heat and is the standard temperature for most baking — cakes, cookies, casseroles and many traditional bakes.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What is 350°F in gas mark?</summary>
+            <div class="faq-answer">350°F is gas mark 4 (180°C in a conventional oven, 160°C in a fan oven). This is the most common temperature in American baking recipes, used for cookies, brownies, cakes and many casseroles.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How do I convert a recipe for a fan oven?</summary>
+            <div class="faq-answer">Reduce the temperature by 20°C when using a fan oven compared to a conventional oven. So a recipe calling for 180°C becomes 160°C in a fan oven. You can also reduce cooking time by about 10-15% because fan ovens cook faster and more evenly. Always check your food a few minutes earlier than the recipe suggests when using a fan oven.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Why do British recipes use gas mark?</summary>
+            <div class="faq-answer">Gas marks are a legacy of when most British homes had gas cookers without temperature dials. The system was simpler than calibrating a precise temperature — you just turned the knob to a number from 1 to 9. Even though most modern ovens display degrees in Celsius, traditional British recipe books and home cooks still use gas marks out of habit.</div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Is 180°C the same as 180°F?</summary>
+            <div class="faq-answer">No — they're very different. 180°C is 356°F (very hot, suitable for baking). 180°F is only 82°C (warm, not even hot enough to cook food). Always check whether a recipe is in Celsius or Fahrenheit before using your oven.</div>
+        </details>
+    </div>
+</section>
+
+<div class="ad-slot" style="margin-bottom:16px;"><div class="ad-slot-inner">Ad Space</div></div>
+
+<footer>&copy; 2026 OvenConvert · Free oven temperature conversion tool</footer>
+
+<script>
+function celsiusToGasMark(c) {
+    if (c < 115) return '¼';
+    if (c < 130) return '½';
+    if (c < 145) return '1';
+    if (c < 155) return '2';
+    if (c < 170) return '3';
+    if (c < 185) return '4';
+    if (c < 195) return '5';
+    if (c < 210) return '6';
+    if (c < 225) return '7';
+    if (c < 235) return '8';
+    return '9';
+}
+
+const GAS_TO_C = {
+    0.25: 110, 0.5: 120, 1: 140, 2: 150, 3: 160,
+    4: 180, 5: 190, 6: 200, 7: 220, 8: 230, 9: 240
+};
+
+function convert() {
+    const tempInput = parseFloat(document.getElementById('temp').value) || 0;
+    const from = document.getElementById('from').value;
+
+    let celsius;
+    if (from === 'celsius') celsius = tempInput;
+    else if (from === 'fahrenheit') celsius = Math.round((tempInput - 32) * 5/9);
+    else if (from === 'gas') celsius = GAS_TO_C[tempInput] || 180;
+    else if (from === 'fan') celsius = tempInput + 20;
+
+    const fahrenheit = Math.round((celsius * 9/5) + 32);
+    const gas = celsiusToGasMark(celsius);
+    const fan = Math.round(celsius - 20);
+
+    document.getElementById('res-c').innerHTML = celsius + '<span class="unit">°C</span>';
+    document.getElementById('res-f').innerHTML = fahrenheit + '<span class="unit">°F</span>';
+    document.getElementById('res-g').textContent = gas;
+    document.getElementById('res-fan').innerHTML = fan + '<span class="unit">°C</span>';
+
+    // Highlight the input source
+    document.querySelectorAll('.res-card').forEach(c => c.classList.remove('highlight'));
+    const map = { celsius: 'card-c', fahrenheit: 'card-f', gas: 'card-g', fan: 'card-fan' };
+    document.getElementById(map[from]).classList.add('highlight');
+}
+
+function quickSet(value, unit) {
+    document.getElementById('temp').value = value;
+    document.getElementById('from').value = unit;
+    convert();
+}
+
+convert();
+</script>
+
+</body>
+</html>
