@@ -6,7 +6,7 @@
     <title>180 in Gas Mark? Oven Temperature Conversion (°C, °F, Gas, Fan)</title>
     <meta name="description" content="What is 180 in gas mark? 180°C is gas mark 4. Convert any oven temperature between Celsius, Fahrenheit, gas mark and fan oven instantly with our free converter.">
     <meta name="keywords" content="180 in gas mark, 180 c in gas mark, 180 degrees in gas mark, 180 c into gas mark, what is 180 degrees celsius in gas mark, 200 degrees in gas mark, 200c in gas mark, gas mark 6 in degrees, gas mark 4 in degrees, 350f to gas mark, 350 f to gas mark, gas mark to celsius, oven temperature conversion, fan oven conversion">
-    <link rel="canonical" href="https://oven-temp.com/">
+    <link rel="canonical" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -44,8 +44,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 16px;
-            flex-wrap: wrap;
         }
         nav .brand {
             font-size: 15px;
@@ -54,8 +52,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            text-decoration: none;
-            color: var(--text);
         }
         nav .brand-mark {
             width: 22px;
@@ -74,10 +70,6 @@
             color: var(--text-muted);
             font-weight: 500;
         }
-        nav .nav-links { display: flex; gap: 24px; align-items: center; }
-        nav .nav-link { font-size: 13px; font-weight: 500; color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
-        nav .nav-link:hover { color: var(--text); }
-        nav .nav-link.active { color: var(--accent); font-weight: 600; }
 
         .ad-slot {
             display: none;
@@ -443,16 +435,11 @@
 <body>
 
 <nav>
-    <a href="/" class="brand">
+    <span class="brand">
         <span class="brand-mark">°</span>
         OvenConvert
-    </a>
-    <div class="nav-links">
-        <a href="/" class="nav-link active">Converter</a>
-        <a href="/about.html" class="nav-link">About</a>
-        <a href="/contact.html" class="nav-link">Contact</a>
-        <a href="/privacy.html" class="nav-link">Privacy</a>
-    </div>
+    </span>
+    <span class="meta">Gas Mark · °C · °F · Fan</span>
 </nav>
 
 <div class="ad-slot"><div class="ad-slot-inner">Ad Space</div></div>
@@ -625,15 +612,7 @@
 
 <div class="ad-slot" style="margin-bottom:16px;"><div class="ad-slot-inner">Ad Space</div></div>
 
-<footer>
-    <div style="margin-bottom: 12px;">
-        <a href="/" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">Converter</a>
-        <a href="/about.html" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">About</a>
-        <a href="/contact.html" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">Contact</a>
-        <a href="/privacy.html" style="color: var(--text-muted); margin: 0 12px; text-decoration: none;">Privacy</a>
-    </div>
-    &copy; 2026 OvenConvert · Free oven temperature conversion tool
-</footer>
+<footer>&copy; 2026 OvenConvert · Free oven temperature conversion tool</footer>
 
 <script>
 function celsiusToGasMark(c) {
